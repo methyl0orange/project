@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oracle.ssm.dao.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.oracle.ssm.po.Student">
+    <id column="Id" jdbcType="INTEGER" property="id" />
+    <result column="manger" jdbcType="VARCHAR" property="manger" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pay" jdbcType="FLOAT" property="pay" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    Id, manger, `name`, pay, remark
+  </sql>
+
+  <select id="selectStudents" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from student
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from student
+    where Id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from student
+    where Id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="Id" keyProperty="id" parameterType="com.oracle.ssm.po.Student" useGeneratedKeys="true">
+    insert into student (manger, `name`, pay, 
+      remark)
+    values (#{manger,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{pay,jdbcType=FLOAT}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="Id" keyProperty="id" parameterType="com.oracle.ssm.po.Student" useGeneratedKeys="true">
+    insert into student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="manger != null">
+        manger,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="pay != null">
+        pay,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="manger != null">
+        #{manger,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pay != null">
+        #{pay,jdbcType=FLOAT},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oracle.ssm.po.Student">
+    update student
+    <set>
+      <if test="manger != null">
+        manger = #{manger,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pay != null">
+        pay = #{pay,jdbcType=FLOAT},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oracle.ssm.po.Student">
+    update student
+    set manger = #{manger,jdbcType=VARCHAR},
+      `name` = #{name,jdbcType=VARCHAR},
+      pay = #{pay,jdbcType=FLOAT},
+      remark = #{remark,jdbcType=VARCHAR}
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

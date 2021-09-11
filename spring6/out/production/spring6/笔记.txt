@@ -1,0 +1,4 @@
+1,获取web元素  public String login(HttpServletRequest request, HttpSession session)
+2，前端向后台传值：保证名字一致 public String login(@RequestParam(name="username",required = true,defaultValue = "",value = "afj") String username, String password)
+   value = "afj":input中name属性必须包含afj
+   域模型接收：public String login( User user)

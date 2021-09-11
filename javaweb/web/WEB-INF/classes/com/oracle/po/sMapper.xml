@@ -1,0 +1,5 @@
+<Mapper>
+    <select id="selectAllS">
+        select * from s
+    </select>
+</Mapper>

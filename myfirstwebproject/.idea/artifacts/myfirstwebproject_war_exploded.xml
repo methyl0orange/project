@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="myfirstwebproject:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/myfirstwebproject_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="myfirstwebproject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jdom-2.0.2" />
+          <element id="library" level="project" name="mysql-connector-java-5.0.4-bin" />
+          <element id="library" level="project" name="mybatis-3.5.7" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="myfirstwebproject/web/Web" />
+    </root>
+  </artifact>
+</component>

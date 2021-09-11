@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.StudentMapper">
+    <resultMap id="BaseReslutMap" type="com.po.Student" >
+        <id column="Id" property="id"  />
+        <result column="manger" property="manger" />
+        <result column="name" property="name"  />
+        <result column="pay" property="pay"/>
+        <result column="remark" property="remark"  />
+    </resultMap>
+    <sql id="Base_Column_List">
+       Id,manger,name,pay,remark
+    </sql>
+
+    <select id="selectById" resultMap="BaseReslutMap" parameterType="integer">
+        select
+        <include refid="Base_Column_List"/>
+        from student where Id=#{id}
+    </select>
+
+    <select id="select" resultMap="BaseReslutMap">
+        select
+        <include refid="Base_Column_List"/>
+        from student
+    </select>
+    <insert id="insert" parameterType="com.po.Student">
+	    insert into student(Id,manger,name,pay,remark)
+	    values (#{id}, #{manger}, #{name},#{pay}, #{remark}
+	    )
+	</insert>
+
+</mapper>

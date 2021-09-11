@@ -1,0 +1,8 @@
+<configuration>
+    <properties location="D:\java\javaweb\src\jdbc.properties">
+    </properties>
+    <mappers>
+        <mapper resource="D:\java\javaweb\src\com\oracle\po\sMapper.xml"></mapper>
+    </mappers>
+
+</configuration>

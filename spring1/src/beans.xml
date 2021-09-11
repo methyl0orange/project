@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd  
+                        http://www.springframework.org/schema/context  
+                        http://www.springframework.org/schema/context/spring-context-4.1.xsd
+                        http://www.springframework.org/schema/mvc
+                        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+   
+    <!-- 开启注解扫描 -->
+    <context:component-scan base-package="com.oracle"/>
+    <!-- 开启注解 -->
+    <mvc:annotation-driven/>
+    <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 -->
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
+    <!-- 处理静态资源 -->
+    <mvc:default-servlet-handler/>
+    <!--<bean id="deptDao" class="com.DeptDao"></bean>-->
+	<!-- scope="prototype" -->
+	<!--<bean id="deptService" class="com.DeptService" scope="prototype">
+	   &lt;!&ndash;  <property name="deptDao" ref="deptDao"></property> &ndash;&gt;
+	   
+	   &lt;!&ndash;  <property name="name" value="韩子辰"></property>
+	    <property name="age" value="38"></property> &ndash;&gt;
+	    
+	    <constructor-arg index="0" ref="deptDao"></constructor-arg>
+	    
+	</bean>-->
+	
+</beans>

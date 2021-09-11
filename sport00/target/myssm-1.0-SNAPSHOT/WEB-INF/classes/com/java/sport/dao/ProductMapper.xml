@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.sport.dao.ProductMapper">
+  <resultMap id="BaseResultMap" type="com.java.sport.po.Product">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="brand_id" jdbcType="BIGINT" property="brandId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="weight" jdbcType="FLOAT" property="weight" />
+    <result column="is_new" jdbcType="BOOLEAN" property="isNew" />
+    <result column="is_hot" jdbcType="BOOLEAN" property="isHot" />
+    <result column="is_commend" jdbcType="BOOLEAN" property="isCommend" />
+    <result column="is_show" jdbcType="BOOLEAN" property="isShow" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="is_del" jdbcType="BOOLEAN" property="isDel" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="package_list" jdbcType="VARCHAR" property="packageList" />
+    <result column="colors" jdbcType="VARCHAR" property="colors" />
+    <result column="sizes" jdbcType="VARCHAR" property="sizes" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, brand_id, `name`, weight, is_new, is_hot, is_commend, is_show, img_url, is_del, 
+    description, package_list, colors, sizes, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bbs_product
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bbs_product
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Product" useGeneratedKeys="true">
+    insert into bbs_product (brand_id, `name`, weight, 
+      is_new, is_hot, is_commend, 
+      is_show, img_url, is_del, 
+      description, package_list, colors, 
+      sizes, create_time)
+    values (#{brandId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{weight,jdbcType=FLOAT}, 
+      #{isNew,jdbcType=BOOLEAN}, #{isHot,jdbcType=BOOLEAN}, #{isCommend,jdbcType=BOOLEAN}, 
+      #{isShow,jdbcType=BOOLEAN}, #{imgUrl,jdbcType=VARCHAR}, #{isDel,jdbcType=BOOLEAN}, 
+      #{description,jdbcType=VARCHAR}, #{packageList,jdbcType=VARCHAR}, #{colors,jdbcType=VARCHAR}, 
+      #{sizes,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <select id="selectProductSelective" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from bbs_product
+    <where>
+      <if test="name != null">
+        name like CONCAT('%',#{name,jdbcType=VARCHAR},'%')
+      </if>
+      <if test="brandId !=null">
+        and brand_id=#{brandId,jdbcType=BIGINT}
+      </if>
+      <if test="isShow != null">
+        and is_show = #{isShow,jdbcType=BIT}
+      </if>
+    </where>
+    order by id asc
+  </select>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Product" useGeneratedKeys="true">
+    insert into bbs_product
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="brandId != null">
+        brand_id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="isNew != null">
+        is_new,
+      </if>
+      <if test="isHot != null">
+        is_hot,
+      </if>
+      <if test="isCommend != null">
+        is_commend,
+      </if>
+      <if test="isShow != null">
+        is_show,
+      </if>
+      <if test="imgUrl != null">
+        img_url,
+      </if>
+      <if test="isDel != null">
+        is_del,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="packageList != null">
+        package_list,
+      </if>
+      <if test="colors != null">
+        colors,
+      </if>
+      <if test="sizes != null">
+        sizes,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="brandId != null">
+        #{brandId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=FLOAT},
+      </if>
+      <if test="isNew != null">
+        #{isNew,jdbcType=BOOLEAN},
+      </if>
+      <if test="isHot != null">
+        #{isHot,jdbcType=BOOLEAN},
+      </if>
+      <if test="isCommend != null">
+        #{isCommend,jdbcType=BOOLEAN},
+      </if>
+      <if test="isShow != null">
+        #{isShow,jdbcType=BOOLEAN},
+      </if>
+      <if test="imgUrl != null">
+        #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDel != null">
+        #{isDel,jdbcType=BOOLEAN},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="packageList != null">
+        #{packageList,jdbcType=VARCHAR},
+      </if>
+      <if test="colors != null">
+        #{colors,jdbcType=VARCHAR},
+      </if>
+      <if test="sizes != null">
+        #{sizes,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.sport.po.Product">
+    update bbs_product
+    <set>
+      <if test="brandId != null">
+        brand_id = #{brandId,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=FLOAT},
+      </if>
+      <if test="isNew != null">
+        is_new = #{isNew,jdbcType=BOOLEAN},
+      </if>
+      <if test="isHot != null">
+        is_hot = #{isHot,jdbcType=BOOLEAN},
+      </if>
+      <if test="isCommend != null">
+        is_commend = #{isCommend,jdbcType=BOOLEAN},
+      </if>
+      <if test="isShow != null">
+        is_show = #{isShow,jdbcType=BOOLEAN},
+      </if>
+      <if test="imgUrl != null">
+        img_url = #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="isDel != null">
+        is_del = #{isDel,jdbcType=BOOLEAN},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="packageList != null">
+        package_list = #{packageList,jdbcType=VARCHAR},
+      </if>
+      <if test="colors != null">
+        colors = #{colors,jdbcType=VARCHAR},
+      </if>
+      <if test="sizes != null">
+        sizes = #{sizes,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.sport.po.Product">
+    update bbs_product
+    set brand_id = #{brandId,jdbcType=BIGINT},
+      `name` = #{name,jdbcType=VARCHAR},
+      weight = #{weight,jdbcType=FLOAT},
+      is_new = #{isNew,jdbcType=BOOLEAN},
+      is_hot = #{isHot,jdbcType=BOOLEAN},
+      is_commend = #{isCommend,jdbcType=BOOLEAN},
+      is_show = #{isShow,jdbcType=BOOLEAN},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      is_del = #{isDel,jdbcType=BOOLEAN},
+      description = #{description,jdbcType=VARCHAR},
+      package_list = #{packageList,jdbcType=VARCHAR},
+      colors = #{colors,jdbcType=VARCHAR},
+      sizes = #{sizes,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

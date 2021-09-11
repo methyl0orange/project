@@ -1,0 +1,25 @@
+spring 
+
+   IOC(DI)     AOP 
+   
+1,搭建简单spring框架
+    1,导jar
+    2,配置文件（beans   bean）
+2,控制权力的反转（控制反转 IOC）
+3,两个类 交由spring管理   
+4,ClassPathXmlApplicationContext:读取配置文件，并实例化bean放在容器中
+
+5,注解
+    1,开启自动扫描<context:component-scan base-package="com.oracle"/>
+    2,类上标注注解@Component("dd")实例化类    @Autowired注入属性值
+    
+6，依赖注入
+     字面量:<property name="age" value="18"></property>
+    2，set注入：<property name="deptDao" ref="deptDao"></property>
+    3，构造器注入：<constructor-arg index="0" ref="deptDao"></constructor-arg> index-参数下标
+    4，静态工厂方法注入
+7，<!-- scope="prototype" request  session  singleton-->    
+
+8，搭建springmvc
+   1,导jar
+   2,配置文件

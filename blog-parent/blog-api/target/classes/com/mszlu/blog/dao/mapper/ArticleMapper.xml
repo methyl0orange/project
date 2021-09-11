@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--mybatis配置文件-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mszlu.blog.dao.mapper.ArticleMapper">
+    <select id="listArchives" resultType="com.mszlu.blog.dao.dos.Archives">
+        SELECT
+	year(create_date) AS year ,
+	month (create_date) AS month ,
+	count(*) AS count
+FROM
+	ms_article
+GROUP BY
+	year ,
+	month
+-- 	select FROM_UNIXTIME(create_date/1000,'%Y')
+-- 	as year,FROM_UNIXTIME(create_date/1000,'%m') as month,count(*)
+-- 	as count from ms_article group by year,month
+    </select>
+</mapper>

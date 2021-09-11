@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sport-console:war exploded">
+    <output-path>$PROJECT_DIR$/sport-console/target/sport-console-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>sport-console</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sport-console" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.oracle.sport:sport-interface:0.0.1-SNAPSHOT" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/sport-console/target/sport-console-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="sport-console/web/Web" />
+    </root>
+  </artifact>
+</component>

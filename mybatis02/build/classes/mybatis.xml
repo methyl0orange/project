@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 读取外部配置文件，设置属性值 -->
+    <!-- 加载顺序，从内到外 -->
+    <properties resource="config.properties">
+         <property name="url" value="jdbc:mysql://localhost:3306/teach_data?characterEncoding=UTF-8"/>
+    </properties>
+
+    <settings>
+         <setting name="cacheEnabled" value="true"/><!-- 一级缓存开关 session --> 
+         <setting name="lazyLoadingEnabled" value="true"/><!-- 懒加载 --> 
+         <setting name="useGeneratedKeys" value="true"/><!-- 主键自增 -->
+         <!-- 二级缓存 -->
+    </settings>
+
+ <!--    <typeAliases>
+        <typeAlias type="com.oracle.po.Car" alias="asd"/>
+        <package name="com.oracle.po"/>包下所有类，类名首字母小写作为别名(没有注解类)
+    </typeAliases> -->
+
+<!-- 插件   pageHelper分页插件 -->
+  <!--   <plugins>
+       <plugin interceptor=""></plugin>
+    </plugins> -->
+    
+
+<!-- dbcp   s3p0   druid -->
+    <environments default="development">
+        <environment id="development">
+        <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+            <property name="driver" value="${driver}"/>
+            <property name="url" value="${url}" />
+            <property name="username" value="root"/>
+            <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    
+    <mappers>
+        <mapper resource="com/oracle/mapper/CarMapper.xml"/>
+    </mappers>
+</configuration>

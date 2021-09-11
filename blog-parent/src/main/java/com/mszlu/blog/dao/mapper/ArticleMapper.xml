@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mszlu.blog.dao.mapper.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.mszlu.blog.dao.pojo.Article">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="comment_counts" jdbcType="INTEGER" property="commentCounts" />
+    <result column="create_date" jdbcType="BIGINT" property="createDate" />
+    <result column="summary" jdbcType="VARCHAR" property="summary" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="view_counts" jdbcType="INTEGER" property="viewCounts" />
+    <result column="weight" jdbcType="INTEGER" property="weight" />
+    <result column="author_id" jdbcType="BIGINT" property="authorId" />
+    <result column="body_id" jdbcType="BIGINT" property="bodyId" />
+    <result column="category_id" jdbcType="INTEGER" property="categoryId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, comment_counts, create_date, summary, title, view_counts, weight, author_id, 
+    body_id, category_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ms_article
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from ms_article
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.mszlu.blog.dao.pojo.Article" useGeneratedKeys="true">
+    insert into ms_article (comment_counts, create_date, summary, 
+      title, view_counts, weight, 
+      author_id, body_id, category_id
+      )
+    values (#{commentCounts,jdbcType=INTEGER}, #{createDate,jdbcType=BIGINT}, #{summary,jdbcType=VARCHAR}, 
+      #{title,jdbcType=VARCHAR}, #{viewCounts,jdbcType=INTEGER}, #{weight,jdbcType=INTEGER}, 
+      #{authorId,jdbcType=BIGINT}, #{bodyId,jdbcType=BIGINT}, #{categoryId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.mszlu.blog.dao.pojo.Article" useGeneratedKeys="true">
+    insert into ms_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="commentCounts != null">
+        comment_counts,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="summary != null">
+        summary,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="viewCounts != null">
+        view_counts,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="authorId != null">
+        author_id,
+      </if>
+      <if test="bodyId != null">
+        body_id,
+      </if>
+      <if test="categoryId != null">
+        category_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="commentCounts != null">
+        #{commentCounts,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=BIGINT},
+      </if>
+      <if test="summary != null">
+        #{summary,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="viewCounts != null">
+        #{viewCounts,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="authorId != null">
+        #{authorId,jdbcType=BIGINT},
+      </if>
+      <if test="bodyId != null">
+        #{bodyId,jdbcType=BIGINT},
+      </if>
+      <if test="categoryId != null">
+        #{categoryId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mszlu.blog.dao.pojo.Article">
+    update ms_article
+    <set>
+      <if test="commentCounts != null">
+        comment_counts = #{commentCounts,jdbcType=INTEGER},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=BIGINT},
+      </if>
+      <if test="summary != null">
+        summary = #{summary,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="viewCounts != null">
+        view_counts = #{viewCounts,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=INTEGER},
+      </if>
+      <if test="authorId != null">
+        author_id = #{authorId,jdbcType=BIGINT},
+      </if>
+      <if test="bodyId != null">
+        body_id = #{bodyId,jdbcType=BIGINT},
+      </if>
+      <if test="categoryId != null">
+        category_id = #{categoryId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mszlu.blog.dao.pojo.Article">
+    update ms_article
+    set comment_counts = #{commentCounts,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=BIGINT},
+      summary = #{summary,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      view_counts = #{viewCounts,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=INTEGER},
+      author_id = #{authorId,jdbcType=BIGINT},
+      body_id = #{bodyId,jdbcType=BIGINT},
+      category_id = #{categoryId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

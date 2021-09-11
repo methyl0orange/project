@@ -1,0 +1,5 @@
+<mymvcs>
+    <mymvc id="aaa.do" class="com.oracle.servlet.Test"  method="test"></mymvc>
+
+
+</mymvcs>

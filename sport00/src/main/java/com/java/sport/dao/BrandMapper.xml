@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.sport.dao.BrandMapper">
+  <cache type="com.java.sport.commons.RedisCacheTransfer"></cache>
+  <resultMap id="BaseResultMap" type="com.java.sport.po.Brand">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="web_site" jdbcType="VARCHAR" property="webSite" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="is_display" jdbcType="BOOLEAN" property="isDisplay" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, `name`, description, img_url, web_site, sort, is_display
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bbs_brand
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bbs_brand
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <select id="selectBrandsCount" resultType="int" parameterType="com.java.sport.po.Brand" >
+    select
+    count(id)
+    from bbs_brand
+    <where>
+      <if test="name != null">
+        name like CONCAT('%',#{name,jdbcType=VARCHAR},'%')
+      </if>
+      <if test="isDisplay != null">
+        and is_display = #{isDisplay,jdbcType=BIT}
+      </if>
+    </where>
+  </select>
+
+  <select id="selectBrandsSelective" resultMap="BaseResultMap" parameterType="com.java.sport.po.Brand" >
+    select
+    <include refid="Base_Column_List" />
+    from bbs_brand
+    <where>
+      <if test="name != null">
+        name like CONCAT('%',#{name,jdbcType=VARCHAR},'%')
+      </if>
+      <if test="isDisplay != null">
+        and is_display = #{isDisplay,jdbcType=BIT}
+      </if>
+    </where>
+    order by sort desc , id asc
+  </select>
+
+  <update id="deleteBrandsById" parameterType="java.lang.Long" >
+    update bbs_brand set is_display=0
+    where id in
+    <foreach collection="array" open="(" separator="," close=")" item="id">
+      #{id,jdbcType=BIGINT}
+    </foreach>
+  </update>
+  <update id="deleteBrandByPrimaryKey" parameterType="java.lang.Long" >
+    update bbs_brand set is_display=0
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Brand" useGeneratedKeys="true">
+    insert into bbs_brand (`name`, description, img_url, 
+      web_site, sort, is_display
+      )
+    values (#{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{imgUrl,jdbcType=VARCHAR}, 
+      #{webSite,jdbcType=VARCHAR}, #{sort,jdbcType=INTEGER}, #{isDisplay,jdbcType=BOOLEAN}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Brand" useGeneratedKeys="true">
+    insert into bbs_brand
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="imgUrl != null">
+        img_url,
+      </if>
+      <if test="webSite != null">
+        web_site,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="isDisplay != null">
+        is_display,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrl != null">
+        #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="webSite != null">
+        #{webSite,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="isDisplay != null">
+        #{isDisplay,jdbcType=BOOLEAN},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.sport.po.Brand">
+    update bbs_brand
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="imgUrl != null">
+        img_url = #{imgUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="webSite != null">
+        web_site = #{webSite,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="isDisplay != null">
+        is_display = #{isDisplay,jdbcType=BOOLEAN},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.sport.po.Brand">
+    update bbs_brand
+    set `name` = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      img_url = #{imgUrl,jdbcType=VARCHAR},
+      web_site = #{webSite,jdbcType=VARCHAR},
+      sort = #{sort,jdbcType=INTEGER},
+      is_display = #{isDisplay,jdbcType=BOOLEAN}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

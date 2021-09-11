@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="filter:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/filter_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="filter" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mybatis-3.5.7" />
+          <element id="library" level="project" name="mysql-connector-java-6.0.6" />
+          <element id="library" level="project" name="lombok-1.18.20" />
+          <element id="library" level="project" name="mybatis-generator-core-1.3.6" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="filter/web/Web" />
+    </root>
+  </artifact>
+</component>

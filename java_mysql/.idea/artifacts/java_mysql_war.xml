@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="java_mysql:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>java_mysql</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="java_mysql-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="java_mysql:war exploded" />
+    </root>
+  </artifact>
+</component>

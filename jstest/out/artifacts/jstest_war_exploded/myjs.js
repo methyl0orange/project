@@ -1,0 +1,1 @@
+document.getElementById("mytime").innerHTML="你好，js";

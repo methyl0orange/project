@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*function mytime() {
+            var currentTime=new Date();
+            var str="";
+            str+=currentTime.getFullYear()+"-"+(currentTime.getMonth()+1)+"-"+currentTime.getDate();
+            str+="     "+currentTime.getHours()+":"+currentTime.getMinutes()+":"+currentTime.getSeconds()+"    "+"星期"+currentTime.getDay();
+            document.getElementById("mytime").innerHTML=str;
+            //疫苗调用一次
+            setTimeout("mytime()",1000);
+
+        }*/
+
+        /*var  i=1;//数字都是number类型
+        var p="ajjdjdcnc";//string
+        var k='fghj';//string   单双引号没区别   双引号中可以用单引号，来正确分节
+        var q=[1,2,3] ;//object
+        var m=new Object(); //object
+        var o;//undefine
+        var s=null;//object
+        m.name="ttt";
+        if(i==1){
+            console.log(i);
+            alert(typeof i);
+        }*/
+       /* var a=new Array();
+        a[0]="hhh1";
+        a[1]="3uu";
+        a[2]="ghj";
+        a[3]="fghj";
+        for(var b in a){
+            alert(a[b]);
+        }*/
+       var i=0;
+       function menu() {
+           if(i==0){
+               document.getElementById("mu").style.display="none";
+               i=1;
+           }else if (i==1){
+               document.getElementById("mu").style.display="";
+               i=0;
+           }
+
+       }
+       /*function change() {
+           var d=document.getElementById("file").value;
+           alert(d);
+
+       }*/
+       function blur1() {
+           var p=document.getElementById("phone").value;
+           if (p.length==11){
+               alert("合法电话号");
+           }else {
+               alert("不合法");
+               document.getElementById("phone").value="";
+           }
+
+       }
+       /*function focus1() {
+           document.getElementById("phone").value="";
+
+       }*/
+
+
+
+    </script>
+</head>
+<body>
+<!--<p id="mytime" style="font-size: 50px"></p>
+<script type="text/javascript" src="myjs.js"></script>
+<button onclick="mytime()">显示时间</button>-->
+
+<!--<input type="file" id="file" onchange="change()";-->
+<!--<input type="text" onblur="blur1()" id="phone" value="请输入电话号" onfocus="focus1()">-->
+<!--<input type="text" onblur="blur1()" id="phone" placeholder="请输入电话号码">-->
+<p id="mytime" style="font-size: 50px" name="pp">how are you</p>
+<script type="text/javascript">
+    //var a=document.getElementsByName("pp").innerHTML;
+    var a=document.getElementsByTagName("p")[0].innerHTML;
+    alert(a);
+</script>
+</body>
+</html>

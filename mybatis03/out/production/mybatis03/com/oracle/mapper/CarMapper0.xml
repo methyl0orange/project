@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.oracle.dao.CarMapper">
+    <resultMap id="BaseReslutMap" type="com.oracle.po.Car" >
+        <id column="CARID" property="carid"  />
+        <result column="NAME" property="name" />
+        <result column="BIRTHDAY" property="birthday"  />
+        <result column="PAILIANG" property="pailiang"/>
+        <result column="LEIXING" property="leixing"  />
+        <result column="RENSHU" property="renshu" />
+        <result column="JIXIANG" property="jixiang" />
+        <result column="PRICE" property="price"/>
+        <result column="IMGURL" property="imgurl"/>
+        <result column="STATE" property="state" />
+    </resultMap>
+    <sql id="Base_Column_List">
+       CARID,NAME,BIRTHDAY,PAILIANG,LEIXING,RENSHU,JIXIANG,PRICE,IMGURL,STATE
+    </sql>
+
+    <select id="selectByPrimaryKey" resultMap="BaseReslutMap" parameterType="integer">
+        select
+        <include refid="Base_Column_List"/>
+        from car where CARID=#{carid}
+    </select>
+    <insert id="insert" parameterType="com.oracle.po.Car">
+	    insert into car(CARID,NAME,BIRTHDAY,PAILIANG,LEIXING,RENSHU,JIXIANG,PRICE,IMGURL,STATE)
+	    values (#{carid}, #{name}, #{birthday},#{pailiang}, #{leixing}, #{renshu},#{jixiang}, #{price}, #{imgurl},#{state}
+	    )
+	</insert>
+
+</mapper>

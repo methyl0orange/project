@@ -1,0 +1,8 @@
+com\java\sport\po\Buyer.class
+com\java\sport\po\Product.class
+com\java\sport\po\Color.class
+com\java\sport\po\Order.class
+com\java\sport\po\Detail.class
+com\java\sport\po\Brand.class
+com\java\sport\po\ProductWithBLOBs.class
+com\java\sport\po\Sku.class

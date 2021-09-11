@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.oracle.dao.CarMapper" >
+  <resultMap id="BaseResultMap" type="com.oracle.po.Car" >
+    <id column="CARID" property="carid" jdbcType="INTEGER" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="BIRTHDAY" property="birthday" jdbcType="TIMESTAMP" />
+    <result column="PAILIANG" property="pailiang" jdbcType="VARCHAR" />
+    <result column="LEIXING" property="leixing" jdbcType="VARCHAR" />
+    <result column="RENSHU" property="renshu" jdbcType="INTEGER" />
+    <result column="JIXIANG" property="jixiang" jdbcType="INTEGER" />
+    <result column="PRICE" property="price" jdbcType="INTEGER" />
+    <result column="IMGURL" property="imgurl" jdbcType="VARCHAR" />
+    <result column="STATE" property="state" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    CARID, NAME, BIRTHDAY, PAILIANG, LEIXING, RENSHU, JIXIANG, PRICE, IMGURL, STATE
+  </sql>
+  <select id="selectCars" resultMap="BaseResultMap">
+     select
+      <include refid="Base_Column_List" />
+      from car
+  </select>
+  
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from car
+    where CARID = #{carid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from car
+    where CARID = #{carid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.oracle.po.Car" >
+    insert into car (CARID, NAME, BIRTHDAY,
+      PAILIANG, LEIXING, RENSHU,
+      JIXIANG, PRICE, IMGURL,
+      STATE)
+    values (#{carid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{birthday,jdbcType=TIMESTAMP},
+      #{pailiang,jdbcType=VARCHAR}, #{leixing,jdbcType=VARCHAR}, #{renshu,jdbcType=INTEGER},
+      #{jixiang,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{imgurl,jdbcType=VARCHAR},
+      #{state,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oracle.po.Car" >
+    insert into car
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="carid != null" >
+        CARID,
+      </if>
+      <if test="name != null" >
+        NAME,
+      </if>
+      <if test="birthday != null" >
+        BIRTHDAY,
+      </if>
+      <if test="pailiang != null" >
+        PAILIANG,
+      </if>
+      <if test="leixing != null" >
+        LEIXING,
+      </if>
+      <if test="renshu != null" >
+        RENSHU,
+      </if>
+      <if test="jixiang != null" >
+        JIXIANG,
+      </if>
+      <if test="price != null" >
+        PRICE,
+      </if>
+      <if test="imgurl != null" >
+        IMGURL,
+      </if>
+      <if test="state != null" >
+        STATE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="carid != null" >
+        #{carid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pailiang != null" >
+        #{pailiang,jdbcType=VARCHAR},
+      </if>
+      <if test="leixing != null" >
+        #{leixing,jdbcType=VARCHAR},
+      </if>
+      <if test="renshu != null" >
+        #{renshu,jdbcType=INTEGER},
+      </if>
+      <if test="jixiang != null" >
+        #{jixiang,jdbcType=INTEGER},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="imgurl != null" >
+        #{imgurl,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oracle.po.Car" >
+    update car
+    <set >
+      <if test="name != null" >
+        NAME = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        BIRTHDAY = #{birthday,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pailiang != null" >
+        PAILIANG = #{pailiang,jdbcType=VARCHAR},
+      </if>
+      <if test="leixing != null" >
+        LEIXING = #{leixing,jdbcType=VARCHAR},
+      </if>
+      <if test="renshu != null" >
+        RENSHU = #{renshu,jdbcType=INTEGER},
+      </if>
+      <if test="jixiang != null" >
+        JIXIANG = #{jixiang,jdbcType=INTEGER},
+      </if>
+      <if test="price != null" >
+        PRICE = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="imgurl != null" >
+        IMGURL = #{imgurl,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        STATE = #{state,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where CARID = #{carid,jdbcType=INTEGER}
+  </update>
+</mapper>

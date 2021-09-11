@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.sport.dao.OrderMapper">
+  <resultMap id="BaseResultMap" type="com.java.sport.po.Order">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="deliver_fee" jdbcType="FLOAT" property="deliverFee" />
+    <result column="total_price" jdbcType="FLOAT" property="totalPrice" />
+    <result column="order_price" jdbcType="FLOAT" property="orderPrice" />
+    <result column="payment_way" jdbcType="BOOLEAN" property="paymentWay" />
+    <result column="payment_cash" jdbcType="BOOLEAN" property="paymentCash" />
+    <result column="delivery" jdbcType="BOOLEAN" property="delivery" />
+    <result column="is_confirm" jdbcType="BOOLEAN" property="isConfirm" />
+    <result column="is_paiy" jdbcType="BOOLEAN" property="isPaiy" />
+    <result column="order_state" jdbcType="BOOLEAN" property="orderState" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="buyer_id" jdbcType="BIGINT" property="buyerId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, deliver_fee, total_price, order_price, payment_way, payment_cash, delivery, is_confirm, 
+    is_paiy, order_state, create_date, note, buyer_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bbs_order
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bbs_order
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Order" useGeneratedKeys="true">
+    insert into bbs_order (deliver_fee, total_price, order_price, 
+      payment_way, payment_cash, delivery, 
+      is_confirm, is_paiy, order_state, 
+      create_date, note, buyer_id
+      )
+    values (#{deliverFee,jdbcType=FLOAT}, #{totalPrice,jdbcType=FLOAT}, #{orderPrice,jdbcType=FLOAT}, 
+      #{paymentWay,jdbcType=BOOLEAN}, #{paymentCash,jdbcType=BOOLEAN}, #{delivery,jdbcType=BOOLEAN}, 
+      #{isConfirm,jdbcType=BOOLEAN}, #{isPaiy,jdbcType=BOOLEAN}, #{orderState,jdbcType=BOOLEAN}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{note,jdbcType=VARCHAR}, #{buyerId,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.java.sport.po.Order" useGeneratedKeys="true">
+    insert into bbs_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="deliverFee != null">
+        deliver_fee,
+      </if>
+      <if test="totalPrice != null">
+        total_price,
+      </if>
+      <if test="orderPrice != null">
+        order_price,
+      </if>
+      <if test="paymentWay != null">
+        payment_way,
+      </if>
+      <if test="paymentCash != null">
+        payment_cash,
+      </if>
+      <if test="delivery != null">
+        delivery,
+      </if>
+      <if test="isConfirm != null">
+        is_confirm,
+      </if>
+      <if test="isPaiy != null">
+        is_paiy,
+      </if>
+      <if test="orderState != null">
+        order_state,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="note != null">
+        note,
+      </if>
+      <if test="buyerId != null">
+        buyer_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="deliverFee != null">
+        #{deliverFee,jdbcType=FLOAT},
+      </if>
+      <if test="totalPrice != null">
+        #{totalPrice,jdbcType=FLOAT},
+      </if>
+      <if test="orderPrice != null">
+        #{orderPrice,jdbcType=FLOAT},
+      </if>
+      <if test="paymentWay != null">
+        #{paymentWay,jdbcType=BOOLEAN},
+      </if>
+      <if test="paymentCash != null">
+        #{paymentCash,jdbcType=BOOLEAN},
+      </if>
+      <if test="delivery != null">
+        #{delivery,jdbcType=BOOLEAN},
+      </if>
+      <if test="isConfirm != null">
+        #{isConfirm,jdbcType=BOOLEAN},
+      </if>
+      <if test="isPaiy != null">
+        #{isPaiy,jdbcType=BOOLEAN},
+      </if>
+      <if test="orderState != null">
+        #{orderState,jdbcType=BOOLEAN},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="note != null">
+        #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="buyerId != null">
+        #{buyerId,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.java.sport.po.Order">
+    update bbs_order
+    <set>
+      <if test="deliverFee != null">
+        deliver_fee = #{deliverFee,jdbcType=FLOAT},
+      </if>
+      <if test="totalPrice != null">
+        total_price = #{totalPrice,jdbcType=FLOAT},
+      </if>
+      <if test="orderPrice != null">
+        order_price = #{orderPrice,jdbcType=FLOAT},
+      </if>
+      <if test="paymentWay != null">
+        payment_way = #{paymentWay,jdbcType=BOOLEAN},
+      </if>
+      <if test="paymentCash != null">
+        payment_cash = #{paymentCash,jdbcType=BOOLEAN},
+      </if>
+      <if test="delivery != null">
+        delivery = #{delivery,jdbcType=BOOLEAN},
+      </if>
+      <if test="isConfirm != null">
+        is_confirm = #{isConfirm,jdbcType=BOOLEAN},
+      </if>
+      <if test="isPaiy != null">
+        is_paiy = #{isPaiy,jdbcType=BOOLEAN},
+      </if>
+      <if test="orderState != null">
+        order_state = #{orderState,jdbcType=BOOLEAN},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="note != null">
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="buyerId != null">
+        buyer_id = #{buyerId,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.java.sport.po.Order">
+    update bbs_order
+    set deliver_fee = #{deliverFee,jdbcType=FLOAT},
+      total_price = #{totalPrice,jdbcType=FLOAT},
+      order_price = #{orderPrice,jdbcType=FLOAT},
+      payment_way = #{paymentWay,jdbcType=BOOLEAN},
+      payment_cash = #{paymentCash,jdbcType=BOOLEAN},
+      delivery = #{delivery,jdbcType=BOOLEAN},
+      is_confirm = #{isConfirm,jdbcType=BOOLEAN},
+      is_paiy = #{isPaiy,jdbcType=BOOLEAN},
+      order_state = #{orderState,jdbcType=BOOLEAN},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      note = #{note,jdbcType=VARCHAR},
+      buyer_id = #{buyerId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

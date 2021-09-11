@@ -1,0 +1,4 @@
+req.getRequestDispatcher("success.html").forward(req,resp)
+转发 延续上一请求  内部跳转 隐藏后续跳转路径
+resp.sendRedirect("success.html")
+重定向 重新发请求 站外跳转 显示后续跳转路径
