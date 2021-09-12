@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ecdc4fa-d41b-4069-89e8-a88e0b4ccbf4" name="Default Changelist" comment="" />
+    <list default="true" id="7ecdc4fa-d41b-4069-89e8-a88e0b4ccbf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1vvMIYscpDFL7y4CUtHyPnRbmGW" />
   <component name="ProjectViewState">
@@ -34,6 +39,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -54,6 +60,7 @@
       <workItem from="1630906961742" duration="475000" />
       <workItem from="1631019432969" duration="8000" />
       <workItem from="1631271448786" duration="2763000" />
+      <workItem from="1631424812721" duration="1196000" />
     </task>
     <servers />
   </component>
@@ -69,17 +76,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1627438258534" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1629027890206">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1631424933596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1629027890206" />
-    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1629027820274">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1631424933596" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1631425984565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1629027820274" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1629027814552">
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1631425984565" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1631425905363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1629027814552" />
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1631425905363" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1631424813301">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631424813301" />
   </component>
 </project>

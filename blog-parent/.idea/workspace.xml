@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08225d36-345d-424d-b28a-1355fa92ebbf" name="Default Changelist" comment="" />
+    <list default="true" id="08225d36-345d-424d-b28a-1355fa92ebbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../base/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -53,6 +61,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1vZG3FjAwNG2XVdcf3oeSTSz3ng" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -77,7 +86,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.33793104" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -190,6 +199,8 @@
       <workItem from="1631080770846" duration="3749000" />
       <workItem from="1631154289714" duration="2185000" />
       <workItem from="1631271433526" duration="14000" />
+      <workItem from="1631426059639" duration="998000" />
+      <workItem from="1631427089642" duration="500000" />
     </task>
     <servers />
   </component>
@@ -221,6 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629876113034" />
+    <state x="372" y="2" key="CommitChangelistDialog2" timestamp="1631427199420">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631427199420" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1629967905165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -285,14 +300,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1630303218622" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1629697889019">
+    <state x="270" y="0" key="SettingsEditor" timestamp="1631427063875">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1629697889019" />
-    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog" timestamp="1631271434940">
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1631427063875" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1631427148389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631271434940" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1631427148389" />
+    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog" timestamp="1631427090685">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631427090685" />
     <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1629082610398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
