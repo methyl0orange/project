@@ -2,10 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08225d36-345d-424d-b28a-1355fa92ebbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BloomFilterTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BloomFilterTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BloomFilterTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BloomFilterTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BloomFilterTest/BloomFilterTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/adapterModel/Adapted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/adapterModel/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/adapterModel/AdapterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/adapterModel/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/singletonModel/hungerSingleton/Singleton2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DesignModel/src/singletonModel/lazySingleton/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo03/.idea/demo03.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/cache/CacheAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/params/CardVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/params/CommonPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/params/TreasureVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/webparams/PageParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/webparams/TreasureParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/common/webparams/WXcode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/GetAndUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/MineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/controller/TreasureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/mapper/BuildingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/mapper/CardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/mapper/InformMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/mapper/TreasureMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/Inform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/Treasure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/dao/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/BuildingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/GetAndUploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/InformService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/TreasureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/BuildingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/CardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/GetAndUploadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/InformServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/TreasureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/service/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/utils/JWTUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/java/com/wxc/utils/OpenIdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/resources/Others/cheshi.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-api/src/test/java/com/wxc/DemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/heu-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../heu-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../meeting/meeting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/observer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/FutureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/SubjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/Thread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../observer/src/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sport00/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BloomFilterTest/src/main/java/BloomFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BloomFilterTest/src/main/java/BloomFilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../base/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/DesignModel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/src/base.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/target/classes/com/mszlu/blog/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/target/classes/com/mszlu/blog/controller/LogoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-api/target/classes/com/mszlu/blog/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/blog-api/target/classes/com/mszlu/blog/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo03/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb/src/com/oracle/jdbc/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb/src/com/oracle/jdbc/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sport00/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sport00/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +170,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -76,7 +179,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog-api/src/main/java/com/mszlu/blog/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,21 +189,21 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.33793104" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\blog-parent\blog-api\src\main\resources\com\mszlu\blog\dao\mapper" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\blog-parent\blog-api\src\main\java\com\mszlu\blog\utils" />
       <recent name="D:\java\blog-parent\blog-api\src\main\java\com\mszlu\blog\common" />
       <recent name="D:\java\blog-parent\blog-api\src\main\java\com\mszlu\blog\service" />
       <recent name="D:\java\blog-parent\blog-api\src\main\java\com\mszlu\blog\service\impl" />
       <recent name="D:\java\blog-parent\blog-api\src\main\java\com\mszlu\blog\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\blog-parent\blog-api\src\main\resources\com\mszlu\blog\dao\mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BlogApp">
@@ -200,12 +303,88 @@
       <workItem from="1631154289714" duration="2185000" />
       <workItem from="1631271433526" duration="14000" />
       <workItem from="1631426059639" duration="998000" />
-      <workItem from="1631427089642" duration="500000" />
+      <workItem from="1631427089642" duration="2487000" />
+      <workItem from="1632121846858" duration="24000" />
+      <workItem from="1632189554975" duration="3461000" />
+      <workItem from="1632217466597" duration="806000" />
+      <workItem from="1632218302118" duration="194000" />
+      <workItem from="1632218520139" duration="59000" />
+      <workItem from="1632218770240" duration="165000" />
+      <workItem from="1632225513885" duration="97000" />
+      <workItem from="1632225632430" duration="7402000" />
+      <workItem from="1632294219518" duration="2911000" />
+      <workItem from="1632301659226" duration="64000" />
+      <workItem from="1632303132963" duration="546000" />
+      <workItem from="1632385442669" duration="12733000" />
+      <workItem from="1632484884779" duration="3625000" />
+      <workItem from="1632570819207" duration="8418000" />
+      <workItem from="1632643631296" duration="7231000" />
+      <workItem from="1632967684315" duration="7535000" />
+      <workItem from="1633075663070" duration="696000" />
+      <workItem from="1633181946945" duration="1132000" />
+      <workItem from="1633183130053" duration="467000" />
+      <workItem from="1633249187561" duration="160000" />
+      <workItem from="1633254903039" duration="1682000" />
+      <workItem from="1633262140581" duration="306000" />
+      <workItem from="1633262735016" duration="602000" />
+      <workItem from="1633265021911" duration="4121000" />
+      <workItem from="1633269693910" duration="37000" />
+      <workItem from="1633271516622" duration="3000" />
+      <workItem from="1633324074375" duration="18895000" />
+      <workItem from="1633488643331" duration="275000" />
+      <workItem from="1633495584233" duration="15000" />
+      <workItem from="1633515415133" duration="12000" />
+      <workItem from="1633517118665" duration="13000" />
+      <workItem from="1633517242653" duration="4825000" />
+      <workItem from="1633523023940" duration="706000" />
+      <workItem from="1633582820718" duration="15251000" />
+      <workItem from="1633765408189" duration="7330000" />
+      <workItem from="1633843745280" duration="858000" />
+      <workItem from="1633845516497" duration="569000" />
+      <workItem from="1633856704619" duration="143000" />
+      <workItem from="1634036110682" duration="1587000" />
+      <workItem from="1634190930240" duration="1936000" />
+      <workItem from="1634194188645" duration="3095000" />
+      <workItem from="1634280558813" duration="1278000" />
+      <workItem from="1634297560729" duration="1252000" />
+      <workItem from="1634344310468" duration="1210000" />
+      <workItem from="1634472283852" duration="3449000" />
+      <workItem from="1634560200356" duration="939000" />
+      <workItem from="1634621384355" duration="1529000" />
+      <workItem from="1634705211552" duration="489000" />
+      <workItem from="1634785658438" duration="1260000" />
+      <workItem from="1634871053936" duration="616000" />
+      <workItem from="1634876793573" duration="3519000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交半成品">
+      <created>1631427682521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631427682521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交半成品" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交半成品" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1626944945529">
@@ -224,121 +403,470 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1626867090136" />
-    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1629097910844">
+    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1633261029148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1629097910844" />
+    <state x="548" y="271" width="439" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1633261029148" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629876113034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1629876113034" />
-    <state x="372" y="2" key="CommitChangelistDialog2" timestamp="1631427199420">
+    <state x="372" y="2" key="CommitChangelistDialog2" timestamp="1631427681660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631427199420" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1629967905165">
+    <state x="372" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1631427681660" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1634875071606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1629967905165" />
-    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1631147386570">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1634875071606" />
+    <state width="1493" height="230" key="GridCell.Tab.0.bottom" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.0.center" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.0.left" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.0.right" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.1.bottom" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.1.bottom" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.1.center" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.1.center" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.1.left" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.1.left" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.1.right" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="230" key="GridCell.Tab.1.right" timestamp="1634645048402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.2.bottom" timestamp="1631147386570">
+    <state width="1493" height="230" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1634645048402" />
+    <state width="1493" height="213" key="GridCell.Tab.2.bottom" timestamp="1633609764229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.2.center" timestamp="1631147386570">
+    <state width="1493" height="213" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1633609764229" />
+    <state width="1493" height="213" key="GridCell.Tab.2.center" timestamp="1633609764229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.2.left" timestamp="1631147386570">
+    <state width="1493" height="213" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1633609764229" />
+    <state width="1493" height="213" key="GridCell.Tab.2.left" timestamp="1633609764229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
-    <state width="1493" height="249" key="GridCell.Tab.2.right" timestamp="1631147386570">
+    <state width="1493" height="213" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1633609764229" />
+    <state width="1493" height="213" key="GridCell.Tab.2.right" timestamp="1633609764229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="249" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1631147386570" />
+    <state width="1493" height="213" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1633609764229" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1628601278928">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1628601278928" />
-    <state x="349" y="147" width="1057" height="530" key="IDE.errors.dialog" timestamp="1630049633248">
+    <state x="349" y="147" width="1057" height="530" key="IDE.errors.dialog" timestamp="1633183576814">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="147" width="1057" height="530" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1630049633248" />
+    <state x="349" y="147" width="1057" height="530" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1633183576814" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1630303218622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1630303218622" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1631427063875">
+    <state x="408" y="110" key="NewModule_or_Project.wizard" timestamp="1633269726845">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1631427063875" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1631427148389">
+    <state x="408" y="110" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1633269726845" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1633261320022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1631427148389" />
-    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog" timestamp="1631427090685">
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1633261320022" />
+    <state x="490" y="154" width="561" height="524" key="StructurePopup" timestamp="1633591121986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1631427090685" />
+    <state x="490" y="154" width="561" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1633591121986" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1631427737443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1631427737443" />
+    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog" timestamp="1634875050987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" width="818" height="351" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1634875050987" />
+    <state x="258" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1633593550229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="258" y="148" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1633593550229" />
     <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1629082610398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1629082610398" />
-    <state x="178" y="45" key="new project wizard" timestamp="1629643550786">
+    <state x="178" y="45" key="new project wizard" timestamp="1633765853023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="45" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1629643550786" />
+    <state x="178" y="45" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1633765853023" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1633606438581">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1633606438581" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1633589239436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1633589239436" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/boot/spring-boot/2.5.0/spring-boot-2.5.0-sources.jar!/org/springframework/boot/SpringApplication.java</url>
+          <line>330</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/boot/spring-boot/2.5.0/spring-boot-2.5.0-sources.jar!/org/springframework/boot/ApplicationContextFactory.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/context/support/GenericWebApplicationContext.class</url>
+          <line>40</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-web/5.3.7/spring-web-5.3.7.jar!/org/springframework/web/context/support/GenericWebApplicationContext.class</url>
+          <line>36</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigUtils.class</url>
+          <line>111</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/boot/spring-boot/2.5.0/spring-boot-2.5.0-sources.jar!/org/springframework/boot/context/config/DelegatingApplicationContextInitializer.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>23</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>24</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>25</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>26</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>30</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>31</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>32</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>36</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>37</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>38</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>42</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>43</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>44</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>48</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>49</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class</url>
+          <line>50</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>279</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>285</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>287</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>384</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>1204</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>745</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class</url>
+          <line>381</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ClassPathScanningCandidateComponentProvider.java</url>
+          <line>415</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ClassPathScanningCandidateComponentProvider.java</url>
+          <line>314</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ComponentScanAnnotationParser.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java</url>
+          <line>295</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java</url>
+          <line>249</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassPostProcessor.java</url>
+          <line>330</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ConfigurationClassPostProcessor.java</url>
+          <line>246</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>310</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>329</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>199</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>232</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>343</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>370</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class</url>
+          <line>115</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class</url>
+          <line>113</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class</url>
+          <line>88</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class</url>
+          <line>83</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class</url>
+          <line>359</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>245</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/blog-api/src/main/java/com/mszlu/blog/BlogApp.java</url>
           <line>10</line>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/repository/org/springframework/boot/spring-boot/2.5.0/spring-boot-2.5.0-sources.jar!/org/springframework/boot/SpringApplication.java</url>
+          <line>336</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>563</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>576</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>582</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java</url>
+          <line>585</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
           <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class</url>
-          <line>766</line>
-          <option name="timeStamp" value="8" />
+          <line>127</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/support/PostProcessorRegistrationDelegate.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://D:/repository/org/springframework/spring-context/5.3.7/spring-context-5.3.7-sources.jar!/org/springframework/context/annotation/ClassPathScanningCandidateComponentProvider.java</url>
+          <line>414</line>
+          <properties class="org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider" method="scanCandidateComponents">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>158</line>
+          <properties class="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory" method="createBean">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://D:/repository/org/springframework/spring-beans/5.3.7/spring-beans-5.3.7.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>901</line>
+          <properties class="org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory" method="populateBean">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="applicationArguments" />
+        <watch expression="((DefaultListableBeanFactory)beanFactory).beanDefinitionMap" custom="org.springframework.beans.factory.support.DefaultListableBeanFactory" />
       </configuration>
     </watches-manager>
   </component>

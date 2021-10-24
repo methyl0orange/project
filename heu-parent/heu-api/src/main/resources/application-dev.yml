@@ -1,0 +1,49 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/heu_card?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 20000ms
+  application:
+    name: courseware
+  cache:
+    type: redis
+    cache-names: redisCache
+server:
+  port: 8080
+
+
+oss:
+  endpoint: 'oss-cn-beijing.aliyuncs.com'
+  accessKeyId: '11'
+  accessKeySecret: '22'
+  bucketName: 'heu-app'
+
+wxpay:
+  mchid: '商家id'
+  key: '支付key'
+wxmini:
+  appid: '11'
+  secret: '22'
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.wxc.dao.pojo
+  global-config:
+    db-config:
+      table-prefix:

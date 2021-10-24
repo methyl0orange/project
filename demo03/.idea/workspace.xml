@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3688f7c-2d58-4efc-9f8b-769f84fc7ab2" name="Default Changelist" comment="" />
+    <list default="true" id="b3688f7c-2d58-4efc-9f8b-769f84fc7ab2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../sport00/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../base/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/base.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/src/base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-parent/blog-api/target/classes/com/mszlu/blog/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-parent/blog-api/target/classes/com/mszlu/blog/controller/LogoutController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-parent/blog-api/target/classes/com/mszlu/blog/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-parent/blog-api/target/classes/com/mszlu/blog/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb/src/com/oracle/jdbc/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb/src/com/oracle/jdbc/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sport00/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sport00/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1sbulh0BSIR8f9VRFA9sn49j2DT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -17,8 +31,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example003" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b3688f7c-2d58-4efc-9f8b-769f84fc7ab2" name="Default Changelist" comment="" />
@@ -28,10 +46,17 @@
       <updated>1621153766034</updated>
       <workItem from="1621153768616" duration="232000" />
       <workItem from="1621154015193" duration="90000" />
+      <workItem from="1633610006259" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1633610018433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1633610018433" />
   </component>
 </project>

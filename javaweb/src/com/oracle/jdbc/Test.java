@@ -1,6 +1,6 @@
 package com.oracle.jdbc;
 
-import com.mysql.jdbc.ResultSet;
+//import com.mysql.jdbc.ResultSet;
 import com.oracle.po.s;
 
 import java.sql.*;
