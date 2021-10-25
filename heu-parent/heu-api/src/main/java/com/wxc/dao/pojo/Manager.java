@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class Manager {
-    private int userid;
-    private int account;
-    private String password;
+    private int limit;
+    private String openid;
 }
